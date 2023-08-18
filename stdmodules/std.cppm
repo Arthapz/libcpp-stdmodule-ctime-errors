@@ -16,8 +16,8 @@ module;
 // The headers of Table 24: C++ library headers [tab:headers.cpp]
 // and the headers of Table 25: C++ headers for C library facilities [tab:headers.cpp.c]
 
-#include <ctime>
+#include <new>
 
 export module std;
 
-#include "std/ctime.inc"
+#include "std/new.inc"
