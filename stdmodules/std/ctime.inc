@@ -7,17 +7,24 @@
 //
 //===----------------------------------------------------------------------===//
 
-module;
+export namespace std {
+  using std::clock_t;
+  using std::size_t;
+  using std::time_t;
 
-#include <__config>
+  using std::timespec;
+  using std::tm;
 
-// TODO MODULES This could be generated
+  using std::asctime;
+  using std::clock;
 
-// The headers of Table 24: C++ library headers [tab:headers.cpp]
-// and the headers of Table 25: C++ headers for C library facilities [tab:headers.cpp.c]
+  using std::ctime;
+  using std::difftime;
+  using std::gmtime;
+  using std::localtime;
+  using std::mktime;
 
-#include <ctime>
-
-export module std;
-
-#include "std/ctime.inc"
+  using std::strftime;
+  using std::time;
+  using std::timespec_get;
+} // namespace std
